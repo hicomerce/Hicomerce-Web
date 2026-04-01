@@ -129,6 +129,7 @@ function HeaderHC() {
           <li onClick={closeAllMenus}><NavLink to="/clientes">Clientes</NavLink></li>
           <li onClick={closeAllMenus}><NavLink to="/nosotros">Nosotros</NavLink></li>
           <li onClick={closeAllMenus}><NavLink to="/contacto">Contacto</NavLink></li>
+          <li onClick={closeAllMenus}><NavLink to="/blogs">Blogs</NavLink></li>
         </ul>
       </nav>
 
@@ -139,6 +140,7 @@ function HeaderHC() {
         <Link to="/contacto" className={styles.btnAsesoria}>
           Quiero Asesoría
         </Link>
+        
       </div>
     </header>
   );

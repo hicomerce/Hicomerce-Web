@@ -101,7 +101,7 @@
   max-width: 420px;
   width: 100%;
   animation: float 6s ease-in-out infinite;
-  min-height: calc(80dvh - 100px);
+ 
 }
 
 @keyframes float {

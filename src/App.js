@@ -13,7 +13,8 @@ import NosotrosHC from "./pages/HC-Nosotros";
 import NosotrosBorrador from "./pages/HC-NosotrosBorrador";
 import AvisoPr from "./pages/HC-AvisoPrivacidad";
 import TerminosServicio from "./pages/HC-TerminosyCondiciones";
-
+import BlogsComponent from "./components/Blogs";
+import BlogDetail from "./components/BlogDetail";
 /* Componentes */
 import Layout from "./components/Layout";
 
@@ -37,6 +38,8 @@ function AppRoutes() {
           <Route index element={<IndexHC />} />
           <Route path="clientes" element={<ClientesHC />} />
           <Route path="contacto" element={<Contacto />} />
+          <Route path="blogs" element={<BlogsComponent />} />
+          <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="nosotros" element={<NosotrosHC />} />
           <Route path="nosotros-borrador" element={<NosotrosBorrador />} />
           <Route path="servicios360" element={<Servicios360 />} />
