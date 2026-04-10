@@ -131,7 +131,7 @@ function FooterHC() {
         
         {/* --- Fila Final: Copyright --- */}
         <div className={styles.copyright}>
-          <p>@Hicomerce 2025 - Todos los derechos reservados</p>
+          <p>@Hicomerce 2026 - Todos los derechos reservados</p>
         </div>
 
       </div>
