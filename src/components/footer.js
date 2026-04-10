@@ -111,7 +111,7 @@ function FooterHC() {
              {/* <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" title="YouTube">
                <i className="fa-brands fa-youtube" />
              </a> */}
-             <a href="https://www.linkedin.com/company/40832129/admin/dashboard/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+             <a href="https://mx.linkedin.com/company/hicomerce" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                <i className="fa-brands fa-linkedin" />
              </a>
           </div>
