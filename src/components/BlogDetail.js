@@ -81,7 +81,7 @@ const styles = {
     minHeight: "100vh",
   },
   container: {
-    maxWidth: "900px",
+    maxWidth: "1200px",
     margin: "0 auto",
   },
   backLink: {
@@ -94,7 +94,7 @@ const styles = {
   heroImage: {
     width: "100%",
     maxHeight: "420px",
-    objectFit: "cover",
+    objectFit: "contain",
     borderRadius: "18px",
     marginBottom: "30px",
   },
