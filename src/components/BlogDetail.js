@@ -93,7 +93,7 @@ const styles = {
   },
   heroImage: {
     width: "100%",
-    maxHeight: "420px",
+    maxHeight: "650px",
     objectFit: "contain",
     borderRadius: "18px",
     marginBottom: "30px",
