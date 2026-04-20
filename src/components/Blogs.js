@@ -34,9 +34,9 @@ function BlogsComponent() {
 
                   <div style={styles.textBox}>
                     {blog.blog_parte_1 && (
-                      <p style={styles.text}>
+                     /*  <p style={styles.text}>
                         {cleanMarkdown(blog.blog_parte_1).slice(0, 260)}...
-                      </p>
+                      </p> */
                     )}
                   </div>
 
