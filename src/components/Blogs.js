@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import blogs from "../assets/files/blogs.json";
-import { createSlug } from "../utils/blogHelpers";
+import { createSlug, cleanMarkdown } from "../utils/blogHelpers";
 
 function BlogsComponent() {
   return (
@@ -33,7 +33,13 @@ function BlogsComponent() {
                   <p style={styles.description}>{blog.meta_descripcion}</p>
 
                   <div style={styles.textBox}>
-                    {blog.blog_parte_1 }
+                    {blog.blog_parte_1 && (
+                      <p style={styles.text}>
+                       <p style={styles.text}>
+                        {cleanMarkdown(blog.blog_parte_1).slice(0, 260)}...
+                      </p>
+                      </p> 
+                    )}
                
                   </div>
 
