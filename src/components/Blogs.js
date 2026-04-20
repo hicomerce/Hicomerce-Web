@@ -94,7 +94,7 @@ const styles = {
   image: {
     width: "100%",
     height: "240px",
-    objectFit: "contain",
+    objectFit: "cover",
     display: "block",
   },
   content: {
