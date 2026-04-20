@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import blogs from "../assets/files/blogs.json";
-import { createSlug, cleanMarkdown } from "../utils/blogHelpers";
+import { createSlug } from "../utils/blogHelpers";
 
 function BlogsComponent() {
   return (
