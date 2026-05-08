@@ -84,6 +84,9 @@ function BlogDetail() {
                 if (item.tipo === "subtitulo") {
                   return <h3 key={index} style={styles.subtitle}>{item.texto}</h3>;
                 }
+                if (item.tipo === "apartado") {
+                  return <h4 key={index} style={styles.apartadoTitle}>{item.texto}</h4>;
+                }
                 if (item.tipo === "parrafo") {
                   return (
                     <p key={index} style={styles.paragraph}>
@@ -213,6 +216,14 @@ const styles = {
     lineHeight: "1.4",
     marginTop: "30px",
     marginBottom: "12px",
+    color: "#222",
+    fontWeight: "700",
+  },
+  apartadoTitle: {
+    fontSize: "20px",
+    lineHeight: "1.4",
+    marginTop: "24px",
+    marginBottom: "10px",
     color: "#222",
     fontWeight: "700",
   },
