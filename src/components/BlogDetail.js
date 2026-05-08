@@ -9,18 +9,27 @@ function BlogDetail() {
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
   const footerRef = useRef(null);
 
+  const [isMobile, setIsMobile] = useState(false);
+
   const blog = blogs.find((item) => createSlug(item.titulo) === slug);
 
   useEffect(() => {
+    // Detectar si es móvil
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
     const footerElement = footerRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // Ocultar el sidebar cuando el footer entra en el viewport
         setIsSidebarVisible(!entry.isIntersecting);
       },
       { 
         threshold: 0,
-        rootMargin: "-50px 0px 0px 0px" // Ajuste para que desaparezca un poco antes
+        rootMargin: "-50px 0px 0px 0px"
       }
     );
 
@@ -29,6 +38,7 @@ function BlogDetail() {
     }
 
     return () => {
+      window.removeEventListener("resize", checkMobile);
       if (footerElement) observer.unobserve(footerElement);
     };
   }, []);
@@ -88,8 +98,8 @@ function BlogDetail() {
 
           <aside style={{ 
             ...styles.sidebar, 
-            opacity: isSidebarVisible ? 1 : 0,
-            visibility: isSidebarVisible ? "visible" : "hidden",
+            opacity: (isSidebarVisible || isMobile) ? 1 : 0,
+            visibility: (isSidebarVisible || isMobile) ? "visible" : "hidden",
             transition: "opacity 0.4s ease, visibility 0.4s ease"
           }}>
             <div style={styles.ctaCard}>
