@@ -1,5 +1,114 @@
 [
   {
+    "titulo": "Agente RAG Comercial 24/7",
+    "meta_descripcion": "Agentes autónomos RAG con n8n + Supabase: automatiza ventas y soporte, ahorra tiempo y mejora KPIs en pymes mexicanas.",
+    "resumen": "Solución lista para vender a directivos: un agente autónomo RAG orquestado por n8n y respaldado en Supabase que automatiza atención, búsquedas internas y propuestas comerciales, reduciendo tiempos y aumentando conversiones. Se implementa con infra mínima y sin jerga técnica.",
+    "imagen_header": "https://res.cloudinary.com/dxukuetdc/image/upload/v1778269894/rlqxrn1dxagx77tpx4bv.jpg",
+    "imagen_footer": "https://res.cloudinary.com/dxukuetdc/image/upload/v1778269918/b4optr5zxjf7bdvhgclc.jpg",
+    "contenido": [
+      {
+        "tipo": "subtitulo",
+        "texto": "¿Qué es un Agente RAG?"
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "Imagina tener a tu disposición un empleado que nunca duerme, siempre está disponible y tiene una memoria infinita. Así es un Agente RAG (Retrieval Augmented Generation), una herramienta que permite a las empresas automatizar procesos y brindar atención al cliente de manera continua y efectiva. Este “cerebro digital” permite a las organizaciones acceder a información específica y ofrecer respuestas personalizadas al instante, convirtiéndose en un aliado clave en el proceso de toma de decisiones."
+      },
+      {
+        "tipo": "subtitulo",
+        "texto": "Automatización 24/7: El Cambio de Juego"
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "La automatización empresarial ha avanzado a pasos agigantados, y con el uso de n8n, las empresas pueden crear flujos de trabajo potentes que integran inteligencia artificial de manera sencilla, sin la necesidad de ser expertos en programación. Este sistema permite automatizar tareas rutinarias que antes consumían tiempo valioso, transformando la manera en que las empresas operan. Combinando la tecnología de RAG con n8n, se abre la puerta a un mundo donde las empresas pueden ofrecer atención al cliente las 24 horas del día, todos los días."
+      },
+      {
+        "tipo": "subtitulo",
+        "texto": "Cómo Funciona el Agente RAG"
+      },
+      {
+        "tipo": "apartado",
+        "texto": "1. Ingesta de Información"
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "El primer paso para que un Agente RAG sea efectivo es la ingesta de datos. Este proceso permite cargar documentos desde diversas fuentes, como PDFs o Google Drive, e incluso hacer web scraping para obtener información relevante de sitios web. Así, el agente cuenta con un amplio abanico de conocimiento desde el inicio."
+      },
+      {
+        "tipo": "apartado",
+        "texto": "2. Chunking: Dividiendo Inteligentemente"
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "Una vez que la información está disponible, el siguiente paso es el “chunking” o la división inteligente de documentos. Esto permite descomponer la información en fragmentos manejables para que el agente pueda procesar y entender el contexto de cada segmento, similar a cómo un lector fragmenta un texto para captar su significado."
+      },
+      {
+        "tipo": "apartado",
+        "texto": "3. Creación de Embeddings"
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "Al igual que un enfoque académico que categoriza conceptos, los embeddings, que pueden ser generados con OpenAI o Cohere, permiten transformar cada fragmento de información en vectores numéricos que representan su significado. Esto facilita que el agente entienda mejor las relaciones entre diferentes informaciones, mejorando su capacidad para proporcionar respuestas precisas."
+      },
+      {
+        "tipo": "subtitulo",
+        "texto": "El Poder de la Búsqueda Semántica"
+      },
+      {
+        "tipo": "apartado",
+        "texto": "1. Almacenamiento de Vectores"
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "Una base de datos de vectores es el corazón del sistema RAG. Think of it as a filing cabinet that organizes all the processed information. Herramientas como Supabase o Pinecone almacenan estos vectores de forma eficiente, lo cual es crucial para la capacidad del agente de buscar información de manera rápida y efectiva."
+      },
+      {
+        "tipo": "apartado",
+        "texto": "2. Recuperación y Generación de Respuestas"
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "La combinación de búsqueda semántica con la generación de respuestas permite ofrecer respuestas contextualizadas a las preguntas de los clientes. Cuando un usuario interactúa con el agende a través de una plataforma como WhatsApp o un chat web, el agente no solo busca la información relevante, sino que también interpreta y genera respuestas adecuadas a la situación específica, todo en tiempo real."
+      },
+      {
+        "tipo": "subtitulo",
+        "texto": "La Comunidad y Recursos Disponibles"
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "Más de 563 workflows listos para usar están disponibles en la comunidad de n8n, lo que facilita aún más la implementación y optimización de los Agentes RAG. Esta amplia variedad de recursos permite a las empresas adaptar la tecnología a sus necesidades específicas, asegurando un retorno de inversión efectivo y aumentando la satisfacción del cliente."
+      },
+      {
+        "tipo": "subtitulo",
+        "texto": "Agentes Autónomos: La Versión Avanzada"
+      },
+      {
+        "tipo": "apartado",
+        "texto": "1. Decisiones Autónomas"
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "La versión avanzada del Agente RAG, conocida como Agentic RAG, permite que el agente tome decisiones autónomas basadas en el contexto. Por ejemplo, puede usar SQL para datos tabulares o seleccionar el tipo de documento que mejor se adapte a la consulta del cliente. Esto reduce aún más la necesidad de intervención humana, permitiendo a las empresas enfocarse en aspectos más estratégicos de su operación."
+      },
+      {
+        "tipo": "apartado",
+        "texto": "2. AI Workflow Builder: La Impresora de Flujos de Trabajo"
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "Con el AI Workflow Builder de n8n, los usuarios pueden describir sus necesidades en lenguaje natural y el sistema automáticamente construye el workflow completo, desde la selección de nodos hasta la configuración adecuada. Esto convierte a n8n en una herramienta accesible para empresas de todos los tamaños, haciendo que la automatización sea más rápida y efectiva."
+      },
+      {
+        "tipo": "subtitulo",
+        "texto": "Conclusión Inicial"
+      },
+      {
+        "tipo": "parrafo",
+        "texto": "Como se puede ver, el Agente RAG Comercial 24/7 no es solo una moda pasajera; es una necesidad real para las empresas que desean permanecer competitivas en un entorno cada vez más digital. Con herramientas como n8n, la automatización de procesos se vuelve accesible, eficiente y precisa, lo que permite a las organizaciones no solo ahorrar tiempo y dinero, sino también mejorar su atención al cliente de manera significativa. La implementación de un agente RAG puede ser el cambio estratégico que muchas empresas necesitan para prosperar en el mercado contemporáneo."
+      }
+    ]
+  },
+  {
     "titulo": "El Nuevo Fronte del Marketing Digital y Su Impacto",
     "meta_descripcion": "Descubre cómo el marketing digital transforma las empresas. Aprende sobre la gestión de la reputación, sinergias y herramientas para el crecimiento.",
     "resumen": "Este blog explora el poder del marketing digital en el crecimiento empresarial. Aprende sobre la gestión de la reputación online, la sinergia entre email y redes, y las tendencias futuras. Conoce las estrategias que impulsan las ventas y mejoran la conexión con los consumidores.",
