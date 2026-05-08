@@ -20,9 +20,9 @@ function BlogsComponent() {
 
             return (
               <article key={index} style={styles.card}>
-                {blog.url_header && (
+                {blog.imagen_header && (
                   <img
-                    src={blog.url_header}
+                    src={blog.imagen_header}
                     alt={blog.titulo}
                     style={styles.image}
                   />
@@ -33,20 +33,22 @@ function BlogsComponent() {
                   <p style={styles.description}>{blog.meta_descripcion}</p>
 
                   <div style={styles.textBox}>
-                    {blog.blog_parte_1 && (
+                    {blog.contenido && (
                       <p style={styles.text}>
-                       <p style={styles.text}>
-                        {cleanMarkdown(blog.blog_parte_1).slice(0, 260)}...
+                        {cleanMarkdown(
+                          blog.contenido.find((item) => item.tipo === "parrafo")
+                            ?.texto || ""
+                        ).slice(0, 260)}
+                        ...
                       </p>
-                      </p> 
                     )}
-               
                   </div>
 
                   <Link to={`/blog/${slug}`} style={styles.button}>
                     Leer más
                   </Link>
                 </div>
+
               </article>
             );
           })}
