@@ -133,7 +133,7 @@ function BlogDetail() {
             <div style={styles.infoBox}>
               <h4 style={styles.infoTitle}>Contacto Hicomerce</h4>
               <p style={styles.infoText}>¿Listo para llevar tu marketing al siguiente nivel? Nuestro equipo de expertos está listo para ayudarte.</p>
-              <Link to="/contacto" style={styles.infoLink}>Ver todos los servicios →</Link>
+              <Link to="/contacto" style={styles.infoLink}>Impulsa tu crecimiento hoy →</Link>
             </div>
           </aside>
         </div>
