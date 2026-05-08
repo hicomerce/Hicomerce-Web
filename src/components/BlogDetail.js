@@ -124,7 +124,7 @@ function BlogDetail() {
                 </li>
               </ul>
 
-              <a href="https://wa.me/your-number" target="_blank" rel="noopener noreferrer" style={styles.ctaButton}>
+              <a href="https://wa.me/523316913370" target="_blank" rel="noopener noreferrer" style={styles.ctaButton}>
                 Quiero Asesoría
               </a>
               
