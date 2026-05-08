@@ -98,16 +98,16 @@ function BlogDetail() {
               
               <ul style={styles.featureList}>
                 <li style={styles.featureItem}>
-                  <span style={styles.check}>✓</span> Generación de prospectos
+                  <span style={styles.check}>✓</span> Diagnóstico gratuito inicial
                 </li>
                 <li style={styles.featureItem}>
-                  <span style={styles.check}>✓</span> SEO y Contenido con IA
+                  <span style={styles.check}>✓</span> Implementación total por nuestro equipo
                 </li>
                 <li style={styles.featureItem}>
-                  <span style={styles.check}>✓</span> Chatbots 24/7 activos
+                  <span style={styles.check}>✓</span> Estrategia personalizada
                 </li>
                 <li style={styles.featureItem}>
-                  <span style={styles.check}>✓</span> Optimización en tiempo real
+                  <span style={styles.check}>✓</span> Garantía de resultados
                 </li>
               </ul>
 
