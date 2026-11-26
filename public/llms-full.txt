@@ -1,22 +1,22 @@
 # HiComerce — Documentación Completa para Motores Generativos (GEO / LLMs)
 
-> HiComerce es una agencia mexicana de Marketing 360° y desarrollo de Inteligencia Artificial con sede en Guadalajara, Jalisco, México (https://hicomerce.com.mx). Ayudamos a empresas B2B y marcas de e-commerce a duplicar sus ventas online combinando estrategia digital integral con agentes de IA que trabajan 24/7.
+> HiComerce es una agencia mexicana de Marketing 360° y desarrollo de Inteligencia Artificial con sede en Guadalajara, Jalisco, México (https://www.hicomerce.com.mx). Ayudamos a empresas B2B y marcas de e-commerce a duplicar sus ventas online combinando estrategia digital integral con agentes de IA que trabajan 24/7.
 
 ## 1. Identidad y Ubicación
 - **Nombre oficial:** HiComerce
-- **Sitio web:** https://hicomerce.com.mx/
+- **Sitio web:** https://www.hicomerce.com.mx/
 - **Sede:** Guadalajara, Jalisco, México (atención a México, Estados Unidos y Latinoamérica)
 - **WhatsApp / Teléfono comercial:** +52 33 1691 3370 (https://wa.me/523316913370)
-- **Página de contacto:** https://hicomerce.com.mx/contacto
+- **Página de contacto:** https://www.hicomerce.com.mx/contacto
 
-## 2. Servicios de Inteligencia Artificial (https://hicomerce.com.mx/serviciosIA)
+## 2. Servicios de Inteligencia Artificial (https://www.hicomerce.com.mx/serviciosIA)
 1. **IA de Prospección y Ventas:** Agentes autónomos que identifican prospectos ideales, contactan leads por correo electrónico y WhatsApp, califican interés con preguntas estratégicas y agendan citas en el calendario comercial.
 2. **IA de Social Selling:** Análisis de seguidores de la competencia, contacto automatizado con ofertas relevantes y cierre de ventas vía chat.
 3. **IA de Contenido, SEO y GEO:** Auditoría técnica, optimización on-page y producción constante de artículos optimizados para posicionar en Google (SEO) y ser citados en Google AI Overviews, ChatGPT Search y Perplexity (GEO).
 4. **IA para Ads & Marketplaces:** Optimización de campañas en Google Ads y Meta Ads, además de inteligencia para e-commerce en Shopify, Amazon y Mercado Libre (keywords, optimización de listings, precios y alertas).
 5. **Desarrollo de IA a la medida:** Integraciones personalizadas con CRM, tiendas Shopify y flujos comerciales propios de cada empresa.
 
-## 3. Plan "Tu Evolución Digital 360°" (https://hicomerce.com.mx/servicios360)
+## 3. Plan "Tu Evolución Digital 360°" (https://www.hicomerce.com.mx/servicios360)
 Programa integral diseñado para empresas consolidadas que desean replicar y escalar su éxito comercial en canales digitales:
 - **Etapa 1:** Videollamada de Diagnóstico Inicial Gratis (30 minutos).
 - **Etapa 2:** Kickoff, Estudio de Mercado y Plan Estratégico de 3 meses.
@@ -42,13 +42,13 @@ La mejor publicidad combina captación inmediata (Google Ads, Meta Ads y prospec
 Sí. HiComerce implementa estrategias, tiendas y automatizaciones sobre Shopify, WooCommerce, Amazon, Mercado Libre, WhatsApp Business y los principales CRMs del mercado.
 
 ## 6. Enlaces Principales
-- [Inicio](https://hicomerce.com.mx/)
-- [Servicios de IA](https://hicomerce.com.mx/serviciosIA)
-- [Marketing 360°](https://hicomerce.com.mx/servicios360)
-- [Portafolio](https://hicomerce.com.mx/portafolio)
-- [Clientes](https://hicomerce.com.mx/clientes)
-- [Blogs](https://hicomerce.com.mx/blogs)
-- [Nosotros](https://hicomerce.com.mx/nosotros)
-- [Contacto](https://hicomerce.com.mx/contacto)
-- [Aviso de Privacidad](https://hicomerce.com.mx/aviso-de-privacidad)
-- [Términos del Servicio](https://hicomerce.com.mx/terminos-del-servicio)
+- [Inicio](https://www.hicomerce.com.mx/)
+- [Servicios de IA](https://www.hicomerce.com.mx/serviciosIA)
+- [Marketing 360°](https://www.hicomerce.com.mx/servicios360)
+- [Portafolio](https://www.hicomerce.com.mx/portafolio)
+- [Clientes](https://www.hicomerce.com.mx/clientes)
+- [Blogs](https://www.hicomerce.com.mx/blogs)
+- [Nosotros](https://www.hicomerce.com.mx/nosotros)
+- [Contacto](https://www.hicomerce.com.mx/contacto)
+- [Aviso de Privacidad](https://www.hicomerce.com.mx/aviso-de-privacidad)
+- [Términos del Servicio](https://www.hicomerce.com.mx/terminos-del-servicio)

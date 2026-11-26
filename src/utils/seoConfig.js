@@ -1,4 +1,4 @@
-export const SITE_URL = "https://hicomerce.com.mx";
+export const SITE_URL = "https://www.hicomerce.com.mx";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/logo512.png`;
 
 export const ROUTE_SEO = {

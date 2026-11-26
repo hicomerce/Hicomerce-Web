@@ -1,4 +1,4 @@
-# robots.txt - HiComerce (https://hicomerce.com.mx)
+# robots.txt - HiComerce (https://www.hicomerce.com.mx)
 User-agent: *
 Allow: /
 Disallow: /nosotros-borrador
@@ -22,4 +22,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://hicomerce.com.mx/sitemap.xml
+Sitemap: https://www.hicomerce.com.mx/sitemap.xml

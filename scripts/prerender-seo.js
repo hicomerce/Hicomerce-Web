@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const BUILD_DIR = path.resolve(__dirname, "..", "build");
-const SITE_URL = "https://hicomerce.com.mx";
+const SITE_URL = "https://www.hicomerce.com.mx";
 const TODAY = new Date().toISOString().slice(0, 10);
 
 const HOME_FAQS = [
