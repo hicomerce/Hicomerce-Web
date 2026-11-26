@@ -1,3 +1,25 @@
-# https://www.robotstxt.org/robotstxt.html
+# robots.txt - HiComerce (https://www.hicomerce.com.mx)
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /nosotros-borrador
+
+# AI Search & Generative Discovery Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://www.hicomerce.com.mx/sitemap.xml

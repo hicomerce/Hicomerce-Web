@@ -1,0 +1,18 @@
+# HiComerce
+
+> Agencia mexicana de Marketing 360° e Inteligencia Artificial para Ventas B2B y E-commerce, con sede en Guadalajara, Jalisco, México. Automatizamos prospección, atención comercial 24/7, posicionamiento SEO/GEO y campañas de crecimiento con garantía de resultados.
+
+## Servicios Principales
+- [Inicio — Marketing 360° + IA](https://www.hicomerce.com.mx/): Propuesta de valor, casos de éxito, garantías y preguntas frecuentes.
+- [Servicios de Inteligencia Artificial](https://www.hicomerce.com.mx/serviciosIA): Agentes de IA para prospección y ventas 24/7 por WhatsApp y correo, Social Selling, Contenido & SEO/GEO, y optimización de Ads & Marketplaces (Amazon, Mercado Libre, Shopify).
+- [Plan Tu Evolución Digital 360°](https://www.hicomerce.com.mx/servicios360): Estrategia integral para empresas que buscan duplicar sus ventas online en 12 meses con estudio de mercado, SEO, e-commerce, Google Ads, Meta Ads y automatización comercial.
+
+## Casos, Clientes y Conocimiento
+- [Portafolio de Proyectos](https://www.hicomerce.com.mx/portafolio): Proyectos implementados en e-commerce, publicidad digital y automatización.
+- [Nuestros Clientes](https://www.hicomerce.com.mx/clientes): Marcas y empresas que confían en HiComerce.
+- [Blog de Marketing e IA](https://www.hicomerce.com.mx/blogs): Artículos especializados sobre ventas B2B, marketing digital, SEO, GEO e inteligencia artificial.
+- [Nosotros](https://www.hicomerce.com.mx/nosotros): Historia, metodología y equipo de HiComerce.
+
+## Contacto y Diagnóstico Gratuito
+- [Contacto y Diagnóstico Gratis](https://www.hicomerce.com.mx/contacto): Agenda una videollamada gratuita de 30 minutos o escríbenos por WhatsApp al +52 33 1691 3370.
+- [Documentación completa para LLMs](https://www.hicomerce.com.mx/llms-full.txt): Resumen detallado de servicios, garantías y preguntas frecuentes de HiComerce.

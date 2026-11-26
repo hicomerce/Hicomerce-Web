@@ -22,12 +22,12 @@ import cliente6 from '../../src/assets/Clients/logos_clientes_web_220_xilin.webp
 
 
 const partnersLogos = [
-  { id: 1, src: cliente1, alt: "Logo de Amatina" },
-  { id: 2, src: cliente2, alt: "Logo de Bobois Collection" },
-  { id: 3, src: cliente3, alt: "Logo de Mexikandela" },
-  { id: 4, src: cliente4, alt: "Logo de Shop Igartua" },
-  { id: 5, src: cliente5, alt: "Logo de Morena Mia" },
-  { id: 5, src: cliente6, alt: "Logo de Morena Mia" },
+  { id: 1, src: cliente1, alt: "Logo de Boca Blanca" },
+  { id: 2, src: cliente2, alt: "Logo de Cklass" },
+  { id: 3, src: cliente3, alt: "Logo de Negro Mostaza" },
+  { id: 4, src: cliente4, alt: "Logo de Deyac" },
+  { id: 5, src: cliente5, alt: "Logo de Roue Bikes" },
+  { id: 6, src: cliente6, alt: "Logo de Xilin" },
 ];
 
 function Hero() {
@@ -65,9 +65,11 @@ function Hero() {
           <div className={styles.logosTrack}>
             {extendedLogos.map((logo, index) => (
               <img
-                key={index}
+                key={`${logo.id}-${index}`}
                 src={logo.src}
                 alt={logo.alt}
+                loading="lazy"
+                decoding="async"
                 className={styles.logo}
               />
             ))}
