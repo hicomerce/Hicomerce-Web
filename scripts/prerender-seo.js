@@ -123,7 +123,7 @@ const ROUTES = [
     canonical: `${SITE_URL}/`,
     schemas: [buildFaqSchema(HOME_FAQS)],
     bodyHtml: `
-      <main>
+      <main class="hc-ssr-shell">
         <header>
           <nav aria-label="Navegación principal">
             <a href="/">Inicio</a>
@@ -173,7 +173,7 @@ const ROUTES = [
       buildFaqSchema(IA_FAQS),
     ],
     bodyHtml: `
-      <main>
+      <main class="hc-ssr-shell">
         <article>
           <h1>Automatiza y escala tus ventas y marketing con nuestra IA 360°</h1>
           <p>La suite de Inteligencia Artificial de HiComerce automatiza la prospección B2B, la calificación de leads por WhatsApp y correo electrónico, el Social Selling, la creación de contenido SEO/GEO y la optimización de campañas en Google Ads, Meta Ads, Amazon y Mercado Libre.</p>
@@ -203,7 +203,7 @@ const ROUTES = [
       buildFaqSchema(S360_FAQS),
     ],
     bodyHtml: `
-      <main>
+      <main class="hc-ssr-shell">
         <article>
           <h1>Tu Evolución Digital 360°: Transformamos tu negocio para triunfar en línea</h1>
           <p>Plan exclusivo de HiComerce para empresas que buscan duplicar sus ventas online en 12 meses mediante estudio de mercado, SEO, GEO, desarrollo e-commerce, Google Ads, Meta Ads, email marketing y automatización comercial.</p>
@@ -222,7 +222,7 @@ const ROUTES = [
     canonical: `${SITE_URL}/blogs`,
     schemas: [],
     bodyHtml: `
-      <main>
+      <main class="hc-ssr-shell">
         <h1>Blog de Marketing Digital, SEO, GEO e Inteligencia Artificial</h1>
         <p>Explora guías prácticas y estrategias comprobadas por el equipo de HiComerce para aumentar ventas B2B y e-commerce en México y Latinoamérica.</p>
         <p><a href="/">Volver al inicio</a> · <a href="/contacto">Solicitar Diagnóstico Gratis</a></p>
@@ -237,7 +237,7 @@ const ROUTES = [
     canonical: `${SITE_URL}/portafolio`,
     schemas: [],
     bodyHtml: `
-      <main>
+      <main class="hc-ssr-shell">
         <h1>Portafolio de Proyectos HiComerce</h1>
         <p>Casos y proyectos implementados en Shopify, e-commerce, Google Ads, Meta Ads, posicionamiento SEO/GEO y automatización comercial con Inteligencia Artificial.</p>
         <p><a href="/contacto">Solicita Diagnóstico Gratis</a></p>
@@ -252,7 +252,7 @@ const ROUTES = [
     canonical: `${SITE_URL}/clientes`,
     schemas: [],
     bodyHtml: `
-      <main>
+      <main class="hc-ssr-shell">
         <h1>Clientes y Marcas que Confían en HiComerce</h1>
         <p>Empresas líderes en México y Estados Unidos que impulsan sus canales digitales con el equipo de Marketing 360° e Inteligencia Artificial de HiComerce.</p>
         <p><a href="/contacto">Agenda tu diagnóstico gratuito</a></p>
@@ -267,7 +267,7 @@ const ROUTES = [
     canonical: `${SITE_URL}/nosotros`,
     schemas: [],
     bodyHtml: `
-      <main>
+      <main class="hc-ssr-shell">
         <h1>Sobre HiComerce</h1>
         <p>Somos una agencia de Marketing 360° e Inteligencia Artificial con sede en Guadalajara, Jalisco, México, dedicada a transformar y escalar las ventas digitales de empresas B2B y e-commerce.</p>
         <p><a href="/contacto">Contáctanos</a></p>
@@ -282,7 +282,7 @@ const ROUTES = [
     canonical: `${SITE_URL}/contacto`,
     schemas: [],
     bodyHtml: `
-      <main>
+      <main class="hc-ssr-shell">
         <h1>Contacto y Diagnóstico Gratuito — HiComerce</h1>
         <p>Agenda una videollamada gratuita de 30 minutos con nuestro equipo en Guadalajara, Jalisco, o escríbenos por WhatsApp al +52 33 1691 3370.</p>
       </main>`,

@@ -8,13 +8,11 @@
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="author" content="HiComerce" />
 
-    <!-- Primary SEO Meta Tags -->
-    <title>HiComerce | Marketing 360° e Inteligencia Artificial</title>
-    <meta
-      name="description"
-      content="Agencia mexicana de Marketing 360° e Inteligencia Artificial para ventas B2B y e-commerce. Automatizamos prospección 24/7, SEO, GEO y Ads con garantía."
-    />
-    <link rel="canonical" href="https://hicomerce.com.mx/" />
+  <!-- Primary SEO Meta Tags -->
+  <title>HiComerce | Marketing 360° e Inteligencia Artificial</title>
+  <meta name="description"
+    content="Agencia mexicana de Marketing 360° e Inteligencia Artificial para ventas B2B y e-commerce. Automatizamos prospección 24/7, SEO, GEO y Ads con garantía." />
+  <link rel="canonical" href="https://hicomerce.com.mx/" />
 
   <!-- Primary SEO Meta Tags -->
   <title>HiComerce | Agencia de Marketing 360° e Inteligencia Artificial para Ventas</title>
@@ -42,6 +40,32 @@
 
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Anti-FOUC: evita el destello de texto sin estilo antes de que React monte -->
+  <style>
+    @keyframes hcSsrFadeIn {
+      to { opacity: 1; }
+    }
+    .hc-ssr-shell {
+      min-height: 100vh;
+      background: linear-gradient(180deg, #020E38 0%, #0b0d14 100%);
+      color: #f0f0f0;
+      font-family: "Albert Sans", system-ui, -apple-system, sans-serif;
+      padding: 48px 24px;
+      opacity: 0;
+      animation: hcSsrFadeIn 0.25s ease 0.65s forwards;
+    }
+    .hc-ssr-shell article {
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.65;
+    }
+    .hc-ssr-shell h1 { font-size: 2rem; color: #ffffff; margin-bottom: 16px; }
+    .hc-ssr-shell h2 { font-size: 1.4rem; color: #02ABE7; margin: 28px 0 12px; }
+    .hc-ssr-shell h3 { font-size: 1.05rem; color: #ffffff; margin: 18px 0 6px; }
+    .hc-ssr-shell p { color: #cbd5e1; margin-bottom: 12px; }
+    .hc-ssr-shell a { color: #FF3B00; text-decoration: none; }
+  </style>
 
   <!-- Base Structured Data (Organization / ProfessionalService) -->
   <script type="application/ld+json" id="hicomerce-org-schema">
@@ -117,7 +141,7 @@
       HiComerce es una agencia mexicana de Marketing 360° e Inteligencia Artificial para ventas. Activa JavaScript para explorar el sitio interactivo o contáctanos por WhatsApp al +52 33 1691 3370.
     </noscript>
     <div id="root">
-      <main>
+      <main class="hc-ssr-shell">
         <article>
           <h1>Marketing 360° potenciado con Inteligencia Artificial</h1>
           <p>HiComerce es una agencia mexicana de Marketing 360° y desarrollo de Inteligencia Artificial con sede en Guadalajara, Jalisco. Ayudamos a empresas B2B y marcas de e-commerce en México, Estados Unidos y Latinoamérica a escalar sus ventas mediante estrategias personalizadas, automatización comercial 24/7 y resultados medibles.</p>
