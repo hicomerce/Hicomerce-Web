@@ -10,7 +10,6 @@ import Portafolio from "./pages/HC-Portafolio";
 import PageNotFound from "./pages/PageNotFound";
 import ClientesHC from "./pages/HC-Clientes";
 import NosotrosHC from "./pages/HC-Nosotros";
-import NosotrosBorrador from "./pages/HC-NosotrosBorrador";
 import AvisoPr from "./pages/HC-AvisoPrivacidad";
 import TerminosServicio from "./pages/HC-TerminosyCondiciones";
 import BlogsComponent from "./components/Blogs";
@@ -21,6 +20,7 @@ import Layout from "./components/Layout";
 /* Util */
 import ScrollToTop from "./utils/ScrollToTop";
 import useRevealSections from "./utils/useRevealSections";
+import { useRouteSEO } from "./utils/usePageSEO";
 
 // 👇 Este componente ya está DENTRO del Router, aquí sí se puede useLocation()
 function AppRoutes() {
@@ -28,6 +28,8 @@ function AppRoutes() {
 
   // Re-ejecuta el setup cada vez que cambia la ruta
   useRevealSections({ key: location.pathname });
+  // Actualiza <title>, meta description, canonical, OG y JSON-LD dinámicamente por ruta
+  useRouteSEO(location.pathname);
 
   return (
     <>
@@ -41,7 +43,6 @@ function AppRoutes() {
           <Route path="blogs" element={<BlogsComponent />} />
           <Route path="/blog/:slug" element={<BlogDetail />} />
           <Route path="nosotros" element={<NosotrosHC />} />
-          <Route path="nosotros-borrador" element={<NosotrosBorrador />} />
           <Route path="servicios360" element={<Servicios360 />} />
           <Route path="serviciosIA" element={<ServiciosIA />} />
           <Route path="portafolio" element={<Portafolio />} />

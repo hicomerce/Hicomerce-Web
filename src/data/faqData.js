@@ -27,7 +27,7 @@ export const homeFaqs = [
     id: "agentes-ia-ventas",
     question: "¿Cómo funcionan los agentes de Inteligencia Artificial para ventas de HiComerce?",
     answer:
-      "Los agentes de Inteligencia Artificial de HiComerce trabajan 24/7 para identificar prospectos ideales, contactarlos de forma personalizada por correo y WhatsApp, calificar su interés con preguntas estratégicas y agendar citas directamente en el calendario de tu equipo comercial. Todo el flujo se integra con tu CRM para llenar tu pipeline sin aumentar tu carga operativa.",
+      "Los agentes de Inteligencia Artificial de HiComerce trabajan 24/7 para identificar prospectos ideales, contactarlos de forma personalizada por correo y WhatsApp, calificar su interés con preguntas estratégicas y agendar citas directamente en el calendario de tu equipo comercial. Este flujo completo se integra con tu CRM para llenar tu pipeline sin aumentar tu carga operativa.",
   },
   {
     id: "garantia-resultados",

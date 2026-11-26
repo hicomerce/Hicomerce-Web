@@ -1,7 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import { cleanMarkdown } from "../utils/blogHelpers";
 import { API_BASE_URL } from "../config/api";
+import { useCustomPageSEO } from "../utils/usePageSEO";
+import { SITE_URL, DEFAULT_OG_IMAGE } from "../utils/seoConfig";
 
 
 function BlogDetail() {
@@ -12,6 +14,68 @@ function BlogDetail() {
   const [isMobile, setIsMobile] = useState(false);
   const [blog, setBlog] = useState(null);
   const [loading, setLoading] = useState(true);
+
+  const canonicalUrl = `${SITE_URL}/blog/${encodeURIComponent(blog?.slug || slug || "")}`;
+  const publishedIso = blog?.created_at ? new Date(blog.created_at).toISOString() : undefined;
+  const modifiedIso = blog?.updated_at ? new Date(blog.updated_at).toISOString() : publishedIso;
+  const authorName = blog?.autor || "Equipo Editorial HiComerce";
+
+  const blogSchema = useMemo(() => {
+    if (!blog) return null;
+    return {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          headline: blog.titulo,
+          description: blog.meta_descripcion || blog.resumen || "",
+          image: blog.imagen_header || DEFAULT_OG_IMAGE,
+          url: canonicalUrl,
+          mainEntityOfPage: {
+            "@type": "WebPage",
+            "@id": canonicalUrl,
+          },
+          inLanguage: "es-MX",
+          ...(publishedIso ? { datePublished: publishedIso } : {}),
+          ...(modifiedIso ? { dateModified: modifiedIso } : {}),
+          author: {
+            "@type": "Organization",
+            name: authorName,
+            url: `${SITE_URL}/nosotros`,
+          },
+          publisher: {
+            "@type": "Organization",
+            "@id": `${SITE_URL}/#organization`,
+            name: "HiComerce",
+            logo: {
+              "@type": "ImageObject",
+              url: DEFAULT_OG_IMAGE,
+            },
+          },
+        },
+        {
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Inicio", item: `${SITE_URL}/` },
+            { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blogs` },
+            { "@type": "ListItem", position: 3, name: blog.titulo, item: canonicalUrl },
+          ],
+        },
+      ],
+    };
+  }, [blog, canonicalUrl, publishedIso, modifiedIso, authorName]);
+
+  useCustomPageSEO({
+    title: blog ? `${blog.titulo} | Blog HiComerce` : "Blog | HiComerce",
+    description: blog?.meta_descripcion || blog?.resumen || "Artículo especializado en marketing digital, SEO, GEO e Inteligencia Artificial de HiComerce.",
+    canonical: canonicalUrl,
+    ogType: "article",
+    image: blog?.imagen_header || DEFAULT_OG_IMAGE,
+    publishedTime: publishedIso,
+    modifiedTime: modifiedIso,
+    schema: blogSchema,
+    schemaId: "hicomerce-blog-schema",
+  });
 
   useEffect(() => {
     // Consultar el blog individual desde la API del backend
@@ -100,14 +164,34 @@ function BlogDetail() {
         )}
 
         <div style={styles.layout}>
-          <div style={styles.mainContent}>
+          <article style={styles.mainContent}>
             <h1 style={styles.title}>{blog.titulo}</h1>
+            <div style={styles.bylineBar}>
+              <span>
+                Por{" "}
+                <Link to="/nosotros" rel="author" style={styles.authorLink}>
+                  {authorName}
+                </Link>
+              </span>
+              {publishedIso && (
+                <>
+                  <span aria-hidden="true">·</span>
+                  <time dateTime={publishedIso}>
+                    {new Date(publishedIso).toLocaleDateString("es-MX", {
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                    })}
+                  </time>
+                </>
+              )}
+            </div>
             <p style={styles.metaDescription}>{blog.meta_descripcion}</p>
 
             <div style={styles.content}>
               {blog.contenido && blog.contenido.map((item, index) => {
                 if (item.tipo === "titulo") {
-                  return <h1 key={index} style={styles.sectionTitle}>{item.texto}</h1>;
+                  return <h2 key={index} style={styles.sectionTitle}>{item.texto}</h2>;
                 }
                 if (item.tipo === "subtitulo") {
                   return <h3 key={index} style={styles.subtitle}>{item.texto}</h3>;
@@ -125,7 +209,7 @@ function BlogDetail() {
                 return null;
               })}
             </div>
-          </div>
+          </article>
 
           <aside style={{ 
             ...styles.sidebar, 
@@ -228,9 +312,23 @@ const styles = {
   title: {
     fontSize: "42px",
     lineHeight: "1.2",
-    marginBottom: "16px",
+    marginBottom: "12px",
     color: "#111",
     fontWeight: "800",
+  },
+  bylineBar: {
+    display: "flex",
+    flexWrap: "wrap",
+    alignItems: "center",
+    gap: "10px",
+    fontSize: "14px",
+    color: "#64748b",
+    marginBottom: "18px",
+  },
+  authorLink: {
+    color: "#ff4d00",
+    fontWeight: "600",
+    textDecoration: "none",
   },
   sectionTitle: {
     fontSize: "32px",

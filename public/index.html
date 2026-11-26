@@ -1,45 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#020E38" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="author" content="HiComerce" />
+
     <!-- Favicon & App Icons -->
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="48x48" href="%PUBLIC_URL%/logo48.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/logo192.png" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <title>HiComerce | Inteligencia Artificial para Ventas y Marketing</title>
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Primary SEO Meta Tags -->
+    <title>HiComerce | Agencia de Marketing 360° e Inteligencia Artificial para Ventas</title>
     <meta
       name="description"
-      content="HiComerce - Agentes de Inteligencia Artificial para Ventas, Marketing Automatizado y Desarrollo Web."
+      content="HiComerce es una agencia mexicana de Marketing 360° e Inteligencia Artificial para ventas B2B y e-commerce. Automatizamos prospección 24/7, SEO, GEO, Google y Meta Ads con garantía de resultados."
     />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link rel="canonical" href="https://hicomerce.com.mx/" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:site_name" content="HiComerce" />
+    <meta property="og:url" content="https://hicomerce.com.mx/" />
+    <meta property="og:title" content="HiComerce | Agencia de Marketing 360° e Inteligencia Artificial para Ventas" />
+    <meta
+      property="og:description"
+      content="Escala tus ventas con Agentes de Inteligencia Artificial 24/7 y nuestra estrategia integral de Marketing 360° en México. Solicita tu diagnóstico gratuito."
+    />
+    <meta property="og:image" content="https://hicomerce.com.mx/logo512.png" />
+    <meta property="og:image:alt" content="Logotipo de HiComerce - Marketing 360° e Inteligencia Artificial" />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="HiComerce | Marketing 360° e Inteligencia Artificial para Ventas" />
+    <meta
+      name="twitter:description"
+      content="Agentes de Inteligencia Artificial para ventas, Marketing 360°, SEO, GEO y automatización comercial en México."
+    />
+    <meta name="twitter:image" content="https://hicomerce.com.mx/logo512.png" />
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- Base Structured Data (Organization / ProfessionalService) -->
+    <script type="application/ld+json" id="hicomerce-org-schema">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "@id": "https://hicomerce.com.mx/#organization",
+        "name": "HiComerce",
+        "url": "https://hicomerce.com.mx/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://hicomerce.com.mx/logo512.png",
+          "width": 512,
+          "height": 512
+        },
+        "image": "https://hicomerce.com.mx/logo512.png",
+        "description": "Agencia mexicana de Marketing 360° y desarrollo de Agentes de Inteligencia Artificial para ventas B2B, e-commerce, SEO, GEO, Google Ads, Meta Ads y automatización comercial.",
+        "telephone": "+52-33-1691-3370",
+        "areaServed": [
+          { "@type": "Country", "name": "México" },
+          { "@type": "Country", "name": "Estados Unidos" },
+          { "@type": "AdministrativeArea", "name": "Latinoamérica" }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Guadalajara",
+          "addressRegion": "Jalisco",
+          "addressCountry": "MX"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 20.692692,
+          "longitude": -103.383501
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+52-33-1691-3370",
+          "contactType": "sales",
+          "availableLanguage": ["Spanish", "English"]
+        },
+        "knowsAbout": [
+          "Marketing 360°",
+          "Agentes de Inteligencia Artificial para Ventas",
+          "SEO Técnico y Posicionamiento Orgánico",
+          "Generative Engine Optimization (GEO)",
+          "Google Ads y Meta Ads",
+          "E-commerce en Shopify, Amazon y Mercado Libre",
+          "Automatización Comercial por WhatsApp y Email"
+        ]
+      }
+    </script>
+
+    <!-- Base Structured Data (WebSite) -->
+    <script type="application/ld+json" id="hicomerce-website-schema">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://hicomerce.com.mx/#website",
+        "url": "https://hicomerce.com.mx/",
+        "name": "HiComerce",
+        "description": "Marketing 360° potenciado con Inteligencia Artificial para ventas y crecimiento digital.",
+        "inLanguage": "es-MX",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://hicomerce.com.mx/#organization",
+          "name": "HiComerce"
+        }
+      }
+    </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      HiComerce es una agencia mexicana de Marketing 360° e Inteligencia Artificial para ventas. Activa JavaScript para explorar el sitio interactivo o contáctanos por WhatsApp al +52 33 1691 3370.
+    </noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
