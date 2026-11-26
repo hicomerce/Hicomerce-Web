@@ -3,17 +3,17 @@ export const DEFAULT_OG_IMAGE = `${SITE_URL}/logo512.png`;
 
 export const ROUTE_SEO = {
   "/": {
-    title: "HiComerce | Agencia de Marketing 360° e Inteligencia Artificial para Ventas",
+    title: "HiComerce | Marketing 360° e Inteligencia Artificial",
     description:
-      "HiComerce es una agencia mexicana de Marketing 360° e Inteligencia Artificial para ventas B2B y e-commerce. Automatizamos prospección 24/7, SEO, GEO, Google y Meta Ads con garantía de resultados.",
+      "Agencia mexicana de Marketing 360° e Inteligencia Artificial para ventas B2B y e-commerce. Automatizamos prospección 24/7, SEO, GEO y Ads con garantía.",
     canonical: `${SITE_URL}/`,
     ogType: "website",
     schema: null,
   },
   "/serviciosIA": {
-    title: "Agentes de Inteligencia Artificial para Ventas y Marketing | HiComerce",
+    title: "Agentes de IA para Ventas y Marketing | HiComerce",
     description:
-      "Automatiza prospección B2B 24/7 por WhatsApp y correo, Social Selling, contenido SEO/GEO y optimización de Ads y Marketplaces con los Agentes de IA de HiComerce.",
+      "Automatiza prospección B2B 24/7 por WhatsApp y correo, Social Selling, contenido SEO/GEO y optimización de Ads y Marketplaces con HiComerce.",
     canonical: `${SITE_URL}/serviciosIA`,
     ogType: "website",
     schema: {

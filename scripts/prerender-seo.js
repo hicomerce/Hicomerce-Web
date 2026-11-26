@@ -117,9 +117,9 @@ const ROUTES = [
   {
     route: "/",
     outFile: "index.html",
-    title: "HiComerce | Agencia de Marketing 360° e Inteligencia Artificial para Ventas",
+    title: "HiComerce | Marketing 360° e Inteligencia Artificial",
     description:
-      "HiComerce es una agencia mexicana de Marketing 360° e Inteligencia Artificial para ventas B2B y e-commerce. Automatizamos prospección 24/7, SEO, GEO, Google y Meta Ads con garantía de resultados.",
+      "Agencia mexicana de Marketing 360° e Inteligencia Artificial para ventas B2B y e-commerce. Automatizamos prospección 24/7, SEO, GEO y Ads con garantía.",
     canonical: `${SITE_URL}/`,
     schemas: [buildFaqSchema(HOME_FAQS)],
     bodyHtml: `
@@ -156,9 +156,9 @@ const ROUTES = [
   {
     route: "/serviciosIA",
     outFile: path.join("serviciosIA", "index.html"),
-    title: "Agentes de Inteligencia Artificial para Ventas y Marketing | HiComerce",
+    title: "Agentes de IA para Ventas y Marketing | HiComerce",
     description:
-      "Automatiza prospección B2B 24/7 por WhatsApp y correo, Social Selling, contenido SEO/GEO y optimización de Ads y Marketplaces con los Agentes de IA de HiComerce.",
+      "Automatiza prospección B2B 24/7 por WhatsApp y correo, Social Selling, contenido SEO/GEO y optimización de Ads y Marketplaces con HiComerce.",
     canonical: `${SITE_URL}/serviciosIA`,
     schemas: [
       {
@@ -331,14 +331,17 @@ function applyRouteTemplate(baseHtml, routeConfig) {
 
   // Inyecta el HTML semántico dentro de #root para bots que no ejecutan JS;
   // React 19 createRoot().render() lo reemplaza automáticamente en navegadores reales.
-  html = html.replace('<div id="root"></div>', `<div id="root">${routeConfig.bodyHtml}</div>`);
+  html = html.replace(
+    /<div\s+id=["']?root["']?\s*>[\s\S]*?<\/div>\s*<\/body>/i,
+    `<div id="root">${routeConfig.bodyHtml}</div></body>`
+  );
 
   return html;
 }
 
 async function enrichSitemapWithBlogs() {
   const sitemapPath = path.join(BUILD_DIR, "sitemap.xml");
-  if (!fs.existsSync(sitemapPath)) return;
+  if (!fs.existsSync(sitemapPath) || typeof fetch !== "function") return;
 
   const apiBase = process.env.REACT_APP_API_URL || "https://hicomerce-backend.hicomerce.com.mx/api";
   try {
