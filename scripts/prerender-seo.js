@@ -287,6 +287,32 @@ const ROUTES = [
         <p>Agenda una videollamada gratuita de 30 minutos con nuestro equipo en Guadalajara, Jalisco, o escríbenos por WhatsApp al +52 33 1691 3370.</p>
       </main>`,
   },
+  {
+    route: "/aviso-de-privacidad",
+    outFile: path.join("aviso-de-privacidad", "index.html"),
+    title: "Aviso de Privacidad | HiComerce",
+    description: "Consulta el Aviso de Privacidad y protección de datos personales de HiComerce.",
+    canonical: `${SITE_URL}/aviso-de-privacidad`,
+    schemas: [],
+    bodyHtml: `
+      <main class="hc-ssr-shell">
+        <h1>Aviso de Privacidad — HiComerce</h1>
+        <p>Consulta nuestras políticas de protección y tratamiento de datos personales en HiComerce.</p>
+      </main>`,
+  },
+  {
+    route: "/terminos-del-servicio",
+    outFile: path.join("terminos-del-servicio", "index.html"),
+    title: "Términos y Condiciones del Servicio | HiComerce",
+    description: "Consulta los Términos y Condiciones de uso y contratación de servicios de HiComerce.",
+    canonical: `${SITE_URL}/terminos-del-servicio`,
+    schemas: [],
+    bodyHtml: `
+      <main class="hc-ssr-shell">
+        <h1>Términos y Condiciones del Servicio — HiComerce</h1>
+        <p>Consulta los términos y condiciones vigentes para el uso de la plataforma y servicios de HiComerce.</p>
+      </main>`,
+  },
 ];
 
 function applyRouteTemplate(baseHtml, routeConfig) {
